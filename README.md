@@ -11,7 +11,7 @@
 
 RoboCopy GUI is a Windows GUI application built in PowerShell that wraps the native `robocopy` utility with a user-friendly interface. It provides a single window for copying, synchronizing, comparing, and cleaning folders — including support for local paths and UNC network paths. No administrator elevation is required to run the tool.
 
-<img width="982" height="717" alt="Screenshot 2026-06-10 125325" src="https://github.com/user-attachments/assets/d31bc1bd-f37d-41fc-9f98-c6941896958f" />
+<img width="982" height="717" alt="Screenshot 2026-06-10 125325" src="https://github.com/user-attachments/assets/ccbe53b9-2d00-4291-9329-a6fc76fbf03b" />
 
 ---
 
@@ -25,6 +25,12 @@ RoboCopy GUI is a Windows GUI application built in PowerShell that wraps the nat
 ---
 
 ## How to Run
+
+### Option 1 — BAT Launcher (Recommended)
+
+The easiest way to launch the tool is by double-clicking **`Launch_RoboCopy_GUI.bat`**. Make sure both `Launch_RoboCopy_GUI.bat` and `source.ps1` are in the same folder. The launcher starts PowerShell silently in the background (no console window) with execution policy bypass, so no system policy changes are needed. If `source.ps1` is missing or PowerShell exits with an error, the launcher will display an informative message.
+
+### Option 2 — Direct PowerShell
 
 Right-click `source.ps1` and select **Run with PowerShell**, or launch from a PowerShell terminal:
 
